@@ -95,28 +95,34 @@ header, footer {
 
 /***** Header *****/
 header {
-
+  padding: 15px 0;
 }
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0px;
 
 }
 header .header-divider {
-
+  width: 90%;
 }
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
+  padding: 17px 0px;
 
 }
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 60%;
+
 }
 header nav ul li {
 
@@ -128,25 +134,68 @@ header nav ul li {
   justify-content: center;
   flex-flow: row wrap;
 }
+.hero-area h2 {
+  padding: 55px 0px;
+}
 main {
   
 }
+
+.content-wrapper {
+  width: 90%;
+}
+
 aside {
+  padding: 55px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
+aside .content-wrapper {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;*/
+}
 aside .form-description {
 
 }
+aside .form-description h3 {
+  /*padding: 32px 0px 0px 0px;*/
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0px;
+}
 aside .form {
-
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+aside .form h3 {
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  justify-content: flex-start;
+  /*width: 60%;*/
+  text-align: left;
+}
+aside .form input {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  width: 90%;
 }
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 55px 0px;
+}
+.features h2 {
+  width: 90%;
 }
 .features .features-items {
   display: flex;
@@ -157,15 +206,29 @@ aside .form {
 .features .features-items .feature-description {
 
 }
+.features p {
+  padding: 20px 0px;
+  margin: 0px;
+}
 .features article {
+  width: 60%;
+  padding: 0px 70px;
+  text-align: center;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;*/
 
 }
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 55px 0px;
 }
-
+.reviews h2 {
+  width: 90%;
+}
 .reviews .content-wrapper {
   
 }  
@@ -210,7 +273,16 @@ aside .form {
 footer {
 
 }
-  
+footer .content-wrapper{
+  width: 55%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer p {
+  margin: 0px;
+}
+
 footer .footer-content {
 
 }
@@ -221,14 +293,14 @@ footer .social {
 
 }
 footer .social-icons {
-  display: flex;
+  /*display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center;*/
 }
 footer .social-icons p {
-  display: flex;
+  /*display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
 }
 footer .copyright {
 
