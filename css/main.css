@@ -503,12 +503,58 @@ footer .copyright {
   justify-content: space-between;
   align-items: flex-start;
 }
-
+}
   
 @media only screen and (min-width: 1200px) {
   /* Desktop Styles Here */
+.content-wrapper {
+  max-width: 960px;
+  margin: 50px 0;
+}
+.hero-area h1 {
+  width: 35%;
+}
+    /* Aside */
+aside .content-wrapper {
+  justify-content: space-around;
 }
 
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+  width: 21%;
+}
+
+  /* Features */
+.features h2 {
+  width: 60%;
+}
+
+.features article {
+  flex-basis: 33%;
+}
+
+  /* Reviews */ 
+.reviews article div {
+  width: 40%;
+}
+
+/* ==========================================================================
+ About Page
+ ========================================================================== */
+.mission h2,
+.contact-section .content-wrapper h2 {
+  width: 40%;
+}
+
+/* ==========================================================================
+ FAQ Page
+ ========================================================================== */
+.faq h2 {
+  width: 100%;
+}
+
+
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -583,4 +629,4 @@ footer .copyright {
     page-break-after: avoid;
   }
 }
-}
+
