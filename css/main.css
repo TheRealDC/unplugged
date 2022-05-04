@@ -102,12 +102,13 @@ ul,
 ol {
   font-size: 1.125em;
   text-transform: uppercase;
-  list-style: none;
+  list-style-type: none;
 }
    
 a {
   color: #e2e3ed;
   text-decoration: none;
+  margin: 0 0 10px 0; /* may need to remove this after unplugged logo is added */
 }
    
 h2 {
@@ -121,6 +122,7 @@ h4 {
   font-family: 'Poppins' , sans-serif;
   font-size: 1.125em;
   font-weight: lighter;
+  margin: 20px 0px;
 }
    
 p {
@@ -150,7 +152,7 @@ header, footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #1f2321;
+  background-color: #202322;
 }
 
 /***** Header *****/
@@ -169,6 +171,8 @@ header .content-wrapper {
 header .header-divider {
   width: 100%;
   background-color: #3a3a3a;
+  height: 1px;
+  margin: 10px 0 10px 0;
 }
 header nav {
   display: flex;
@@ -176,7 +180,9 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
-  padding: 17px 0px;
+  padding: 0px 0px;
+  font-size: 1.125em;
+  font-weight: bolder;
 
 }
 header nav ul {
@@ -188,6 +194,7 @@ header nav ul {
 
 footer {
   flex-direction: column;
+  text-align: center;
 }
 footer .content-wrapper{
   width: 55%;
@@ -214,11 +221,19 @@ footer .social-icons p {
   justify-content: center;
   align-items: center;
 }
+footer .copyright {
+  margin: 20px 0;
+}
 /***** Main *****/
 .hero-area {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins' , sans-serif;
+  font-weight: normal;
 }
 
 aside {
@@ -230,36 +245,6 @@ aside {
   background-color: #517157;
 }
 
-/*aside .form-description {
-
-}
-aside .form-description h3 {
-  /*padding: 32px 0px 0px 0px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-flow: row wrap;
-  margin: 0px;
-}
-aside .form {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-flow: row wrap;
-}
-aside .form h3 {
-  padding: 10px 0px 0px 0px;
-  display: flex;
-  justify-content: flex-start;
-  /*width: 60%;
-  text-align: left;
-}
-aside .form input {
-  padding: 10px 0px;
-  display: flex;
-  justify-content: center;
-  width: 90%;
-}*/
 .features {
   display: flex;
   justify-content: center;
@@ -278,6 +263,7 @@ aside .form input {
 
 .features p {
   margin: 0px;
+  text-align: center;
 }
 .features article {
   width: 60%;
