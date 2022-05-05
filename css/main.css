@@ -185,13 +185,14 @@ header nav {
   padding: 0px 0px;
   font-size: 1.125em;
   font-weight: bolder;
+  line-height: 0;
 
 }
 header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
-
+  padding: 0;
 }
 
 footer {
@@ -227,7 +228,7 @@ footer .social-icons p {
   width: 40px;
   height: 40px;
 }
-footer .social-icons i {
+footer .social-icons p i {
   font-size: 1.3125em;
 }
 footer .copyright {
@@ -258,6 +259,12 @@ aside {
   flex-flow: row wrap;
   background-color: #517157;
 }
+aside .content-wrapper {
+  margin: 0 0 50px 0;
+}
+aside .form {
+  margin-top: 30px;
+}
 
 .features {
   background-image: url("../img/features-image.png");
@@ -269,7 +276,7 @@ aside {
   /*padding: 55px 0px;*/
 }
 .features h2 {
-  margin-bottom: 60px;
+  margin: 0px 14px;
 }
 .features .features-items {
   display: flex;
@@ -301,13 +308,15 @@ aside {
   background-color: #294139;
 }
 .reviews h2 {
-  margin-bottom: 40px;
+  margin: 0 0 25px 0;
 }
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
 }
-
+.reviews p {
+  margin: 0px;
+}
 
 /***************ABOUT PAGE*****************/
 .mission {
@@ -362,9 +371,6 @@ aside {
 
 .faq-content {
   margin-bottom: 50px;
-}
-aside .form {
-  margin-top: 30px;
 }
  
 input[type=text] {
@@ -554,9 +560,11 @@ aside .content-wrapper .form {
   flex-flow: column wrap;
   flex-basis: 50%;
 }
-
+.features h2 {
+  margin: 0;
+}
 .features .features-description {
-    width: 60%;
+    width: 62%;
 }
 
 /* Reviews */
@@ -574,7 +582,7 @@ aside .content-wrapper .form {
 }
 .reviews h3 {
   width: 75%;
-  margin: 0;
+  margin: 0 0 15px 0;
 }
 
 /* Footer */
@@ -612,10 +620,12 @@ footer .copyright {
 
 .faq-content {
   flex-basis: 45%;
+  /*margin-bottom: 0;*/
 }
 
 .faq h2 {
   width: 100%;
+  margin: 0px;
 }
 .faq p, .faq h4 {
   font-size: .875em;
@@ -627,7 +637,9 @@ footer .copyright {
   align-items: center;
   padding-top: 20px;
 }
- 
+.mission h2 {
+  margin: 0px;
+}
 .mission-content p {
   width: 45%;
 }
@@ -647,6 +659,7 @@ footer .copyright {
 }
 .contact-section .content-wrapper h2 {
   width: 80%;
+  margin: 0px;
 }
  
 .contact-content {
@@ -660,7 +673,7 @@ footer .copyright {
   /* Desktop Styles Here */
 .content-wrapper {
   max-width: 960px;
-  margin: 50px 0;
+  /*margin: 50px 0;*/
 }
 h2 {
   font-size: 2.25em;
@@ -678,7 +691,6 @@ header {
 .hero-area h1 {
   width: 80%;
   font-size: 3.75em;
-  margin: 50px;
 }
     /* Aside */
 aside .content-wrapper {
